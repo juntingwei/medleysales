@@ -1,14 +1,13 @@
 import Image from "next/image"
 
-export default function Hero() {
-
+export default function Hero(props: any) {
 
     function MainContent() {
         return(
-            <div className="flex flex-col max-w-1120px mx-auto">
+            <div className="flex flex-col font-poppins  max-w-1120px mx-auto">
                 
-                <div className="inline-flex flex-col items-center gap-12">
-                    <h1 className="text-center">Modern Booking Software made <a className="relative text-accent">
+                <div className="inline-flex flex-col items-center gap-12 lg:mx-auto md:mx-4">
+                    <h1 className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
                             for&nbsp;Pharmacy
                             <Image
                                 src='/underline.svg'
@@ -19,8 +18,8 @@ export default function Hero() {
                             />
                         </a>
                     </h1>
-                    <h4 className="text-center">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
-                    <button className="text-center bg-accent py-4 px-8 rounded text-offblack">Joint the Waitlist</button>
+                    <h4 className="text-center font-poppins">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
+                    <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack">Join Waitlist</button>
                 </div>
 
                 <div className="relative h-706px flex flex-col items-center my-24">
@@ -58,15 +57,10 @@ export default function Hero() {
     return(
         <div className="bg-gradient-to-b from-primary to-offwhite pt-24 relative">
 
-            <MainContent/>
+            <div className="bg-blobs bg-center bg-no-repeat bg-cover">
+                <MainContent/>
+            </div>
 
-            <Image
-                src='/blobs.svg'
-                width={1800}
-                height={1600}
-                alt=""
-                className="absolute z-40 top-0 opacity-40"
-            />
         </div>
     )
 }

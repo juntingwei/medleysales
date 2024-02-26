@@ -12,10 +12,13 @@ const config: Config = {
     extend: {
       screens: {
         'sm': '640px',
-        'md': '768px'
+        'md': '768px',
+        'lg': '1440px'
       },
       fontFamily: {
-        'logo': []
+        'poppins-m': ['Poppins-Medium', 'sans-serif'],
+        'poppins': ['Poppins-Regular', 'sans-serif'],
+        'mukta': ['Mukta', 'sans-serif']
       },
       colors: {
         'offblack': '#353535',
@@ -37,7 +40,8 @@ const config: Config = {
       },
       backgroundImage: {
         'blob': "url('/bigblob.svg')",
-        'blob1': "url('/bigblob1.svg')"
+        'blob1': "url('/bigblob1.svg')",
+        'blobs': "url('/blobs.svg')"
       }
 
     }
