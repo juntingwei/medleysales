@@ -11,9 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1440px'
+        'tablet': '744px',
+        'desktop': '1440px'
       },
       fontFamily: {
         'poppins-m': ['Poppins-Medium', 'sans-serif'],

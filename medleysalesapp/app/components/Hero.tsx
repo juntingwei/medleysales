@@ -4,10 +4,10 @@ export default function Hero(props: any) {
 
     function MainContent() {
         return(
-            <div className="flex flex-col font-poppins  max-w-1120px mx-auto">
+            <div className="flex flex-col font-poppins max-w-1120px mx-auto text-4xl px-2">
                 
-                <div className="inline-flex flex-col items-center gap-12 lg:mx-auto md:mx-4">
-                    <h1 className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
+                <div className="inline-flex flex-col items-center gap-12">
+                    <p className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
                             for&nbsp;Pharmacy
                             <Image
                                 src='/underline.svg'
@@ -17,17 +17,25 @@ export default function Hero(props: any) {
                                 className="absolute right-0 m-0"
                             />
                         </a>
-                    </h1>
-                    <h4 className="text-center font-poppins">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
-                    <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack">Join Waitlist</button>
+                    </p>
+                    <h4 className="text-center font-poppins text-2xl px-2">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
+                    <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack font-poppins-m text-base">Join Waitlist</button>
                 </div>
 
                 <div className="relative h-706px flex flex-col items-center my-24">
 
                     <Image
                         src='/Desktop Preview.svg'
-                        width={935}
-                        height={608}
+                        width={5000}
+                        height={5000}
+                        alt="Picture of the author"
+                        className="absolute hidden"
+                    />
+                    
+                    <Image
+                        src='/Desktop Preview Half.svg'
+                        width={5000}
+                        height={5000}
                         alt="Picture of the author"
                         className="absolute"
                     />
@@ -37,7 +45,7 @@ export default function Hero(props: any) {
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute -left-2 bottom-0"
+                        className="absolute desktop:-left-2 desktop:bottom-0"
                     />
                     
                     <Image
@@ -45,7 +53,7 @@ export default function Hero(props: any) {
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute -right-2 bottom-0"
+                        className="absolute desktop:-right-2 desktop:bottom-0"
                     />
                 </div>
 

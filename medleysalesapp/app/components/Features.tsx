@@ -6,7 +6,7 @@ export default function Features() {
 
             <div className="max-w-1120px m-auto py-20">
 
-                <h2 className="text-offblack text-center font-poppins-m lg:mx-auto md:mx-8">Features every pharmacy needs to <a className="text-accent">elevate their services</a></h2>
+                <h2 className="text-offblack text-center font-poppins-m">Features every pharmacy needs to <a className="text-accent">elevate their services</a></h2>
             
             </div>
 
