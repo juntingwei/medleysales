@@ -12,19 +12,19 @@ export default function Home() {
   
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    setScrollPosition(position);
-  };
+  // const handleScroll = () => {
+  //   const position = window.scrollY;
+  //   setScrollPosition(position);
+  // };
 
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
+  // useEffect(() => {
+  //   handleScroll();
+  //   window.addEventListener("scroll", handleScroll);
     
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   console.log(scrollPosition)
 

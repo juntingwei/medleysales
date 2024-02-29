@@ -4,9 +4,9 @@ export default function Hero(props: any) {
 
     function MainContent() {
         return(
-            <div className="flex flex-col font-poppins max-w-1120px mx-auto text-4xl px-2">
+            <div className="flex flex-col font-poppins max-w-1120px mx-auto text-4xl">
                 
-                <div className="inline-flex flex-col items-center gap-12">
+                <div className="inline-flex flex-col items-center gap-12 px-2">
                     <p className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
                             for&nbsp;Pharmacy
                             <Image
@@ -18,11 +18,13 @@ export default function Hero(props: any) {
                             />
                         </a>
                     </p>
-                    <h4 className="text-center font-poppins text-2xl px-2">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
+                    <h4 className="text-center font-poppins text-2xl">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
                     <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack font-poppins-m text-base">Join Waitlist</button>
                 </div>
 
                 <div className="relative h-706px flex flex-col items-center my-24">
+
+                    {/* Desktop preview for tablet sizes screen and above */}
 
                     <Image
                         src='/Desktop Preview.svg'
@@ -31,6 +33,8 @@ export default function Hero(props: any) {
                         alt="Picture of the author"
                         className="absolute hidden"
                     />
+
+                    {/* Desktop preview for mobile size screen */}
                     
                     <Image
                         src='/Desktop Preview Half.svg'
@@ -39,13 +43,15 @@ export default function Hero(props: any) {
                         alt="Picture of the author"
                         className="absolute"
                     />
+
+                    {/*  */}
                     
                     <Image
                         src='/Client Mobile Preview.svg'
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute desktop:-left-2 desktop:bottom-0"
+                        className="absolute -left-2 bottom-1/4"
                     />
                     
                     <Image
