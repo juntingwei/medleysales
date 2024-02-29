@@ -28,9 +28,6 @@ const config: Config = {
         'primarylight': '#AECDDF',
         'accent': '#F89B61'
       },
-      height: {
-        '706px': '706px',
-      },
       width: {
         '1120px': '1120px',
       },

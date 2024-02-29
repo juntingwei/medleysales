@@ -22,36 +22,63 @@ export default function Hero(props: any) {
                     <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack font-poppins-m text-base">Join Waitlist</button>
                 </div>
 
-                <div className="relative h-706px flex flex-col items-center my-24">
+                <div className="relative flex flex-col items-center my-24">
 
-                    {/* Desktop preview for tablet sizes screen and above */}
+                    {/* Mobile views */}
+
+                    <div className="relative mb-6 tablet:collapse">
+                        <Image
+                            src='/Desktop Preview Half.svg'
+                            width={5000}
+                            height={5000}
+                            alt="Picture of the author"
+                            className="z-0"
+                        />
+
+                        <Image
+                            src='/Client Mobile Preview.svg'
+                            width={222}
+                            height={418}
+                            alt="Picture of the author"
+                            className="absolute z-5 -bottom-4"
+                         />
+                    </div>
+
+                    <div className="relative tablet:collapse">
+                        <Image
+                            src='/Desktop Preview Half 2.svg'
+                            width={5000}
+                            height={5000}
+                            alt="Picture of the author"
+                            className="z-0"
+                        />
+
+                        <Image
+                            src='/Mobile Preview.svg'
+                            width={222}
+                            height={418}
+                            alt="Picture of the author"
+                            className="absolute z-5 -bottom-4 right-0"
+                        />
+                    
+                    </div>
+
+                    {/* Desktop views */}
 
                     <Image
                         src='/Desktop Preview.svg'
                         width={5000}
                         height={5000}
                         alt="Picture of the author"
-                        className="absolute hidden"
+                        className="absolute collapse tablet:visible"
                     />
-
-                    {/* Desktop preview for mobile size screen */}
-                    
-                    <Image
-                        src='/Desktop Preview Half.svg'
-                        width={5000}
-                        height={5000}
-                        alt="Picture of the author"
-                        className="absolute"
-                    />
-
-                    {/*  */}
                     
                     <Image
                         src='/Client Mobile Preview.svg'
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute -left-2 bottom-1/4"
+                        className="absolute collapse tablet:visible"
                     />
                     
                     <Image
@@ -59,7 +86,7 @@ export default function Hero(props: any) {
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute desktop:-right-2 desktop:bottom-0"
+                        className="absolute collapse tablet:visible"
                     />
                 </div>
 
