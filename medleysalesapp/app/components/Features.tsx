@@ -4,9 +4,9 @@ export default function Features() {
     return(
         <div className="font-poppins">
 
-            <div className="max-w-1120px m-auto py-20">
+            <div className="max-w-[1120px] m-auto pb-20">
 
-                <h2 className="text-offblack text-center font-poppins-m">Features every pharmacy needs to <a className="text-accent">elevate their services</a></h2>
+                <h2 className="text-offblack text-center font-poppins-m py-32">Features every pharmacy needs to <a className="text-accent">elevate their services</a></h2>
             
             </div>
 

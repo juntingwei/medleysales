@@ -4,7 +4,7 @@ export default function Hero(props: any) {
 
     function MainContent() {
         return(
-            <div className="flex flex-col font-poppins max-w-1120px mx-auto text-4xl">
+            <div className="flex flex-col font-poppins max-w-[1120px] mx-auto text-4xl">
                 
                 <div className="inline-flex flex-col items-center gap-12 px-2">
                     <p className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
@@ -22,7 +22,7 @@ export default function Hero(props: any) {
                     <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack font-poppins-m text-base">Join Waitlist</button>
                 </div>
 
-                <div className="relative flex flex-col items-center my-24">
+                <div className="relative flex flex-col items-center my-24 tablet:mx-8">
 
                     {/* Mobile views */}
 
@@ -32,7 +32,7 @@ export default function Hero(props: any) {
                             width={5000}
                             height={5000}
                             alt="Picture of the author"
-                            className="z-0"
+                            className="z-0 tablet:hidden"
                         />
 
                         <Image
@@ -40,7 +40,7 @@ export default function Hero(props: any) {
                             width={222}
                             height={418}
                             alt="Picture of the author"
-                            className="absolute z-5 -bottom-4"
+                            className="absolute z-5 -bottom-4 tablet:hidden"
                          />
                     </div>
 
@@ -50,7 +50,7 @@ export default function Hero(props: any) {
                             width={5000}
                             height={5000}
                             alt="Picture of the author"
-                            className="z-0"
+                            className="z-0 tablet:hidden"
                         />
 
                         <Image
@@ -58,7 +58,7 @@ export default function Hero(props: any) {
                             width={222}
                             height={418}
                             alt="Picture of the author"
-                            className="absolute z-5 -bottom-4 right-0"
+                            className="absolute z-5 -bottom-4 right-0 tablet:hidden"
                         />
                     
                     </div>
@@ -70,7 +70,7 @@ export default function Hero(props: any) {
                         width={5000}
                         height={5000}
                         alt="Picture of the author"
-                        className="absolute collapse tablet:visible"
+                        className="hidden mx-16 tablet:flex"
                     />
                     
                     <Image
@@ -78,7 +78,7 @@ export default function Hero(props: any) {
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute collapse tablet:visible"
+                        className="absolute hidden -left-8 -bottom-16 tablet:flex"
                     />
                     
                     <Image
@@ -86,7 +86,7 @@ export default function Hero(props: any) {
                         width={222}
                         height={418}
                         alt="Picture of the author"
-                        className="absolute collapse tablet:visible"
+                        className="absolute hidden -right-8 -bottom-8 tablet:flex"
                     />
                 </div>
 
@@ -96,9 +96,9 @@ export default function Hero(props: any) {
 
 
     return(
-        <div className="bg-gradient-to-b from-primary to-offwhite pt-24 relative">
+        <div className="bg-gradient-to-b from-primary to-offwhite relative">
 
-            <div className="bg-blobs bg-center bg-no-repeat bg-cover">
+            <div className="bg-blobs bg-center bg-no-repeat bg-cover pt-28">
                 <MainContent/>
             </div>
 

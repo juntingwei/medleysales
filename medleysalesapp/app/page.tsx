@@ -39,7 +39,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-offwhite font-poppins">
+    <div className="bg-offwhite font-poppins overflow-clip">
           <Navbar 
             isOpen={isOpen} 
             closeModal={() => closeModal()}
