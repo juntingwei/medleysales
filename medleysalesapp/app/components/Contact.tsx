@@ -47,63 +47,61 @@ export default function Contact() {
   console.log(completed)
 
     return(
-        <div className="bg-gradient-to-b from-offwhite to-primary font-custom">
+        <div className="">
+            <div className="p-4 pb-16 relative bg-cblob bg-top bg-no-repeat bg-auto">
 
-            <div className="max-w-1120px mx-auto flex items-center space-x-2 py-[98px]">
-                <div className="text-offblack">
-                    <h3>Contact Us</h3>
-                    <h5>Leave us a message and we will reply as soon as possible</h5>
-                </div>
-                <div className="p-12 rounded-3xl bg-white w-1/2 text-offblack space-y-4">
-                    <h4 className="text-offblack">Please fill in your details</h4>
-                    <form ref={form} onSubmit={sendTest} className="">
+              <div className="p-8 rounded-3xl bg-white text-offblack relative tablet:p-16 tablet:mx-8 desktop:max-w-[860px] desktop:m-auto">
 
-                        <label htmlFor="from_name" className="block mb-2 mt-4">Full name<a className='text-red-300 '> *</a></label>
-                        <input
-                          type="text"
-                          id="from_name"
-                          name='from_name'
-                          onBlur={checkClicked}
-                          placeholder="Enter your full name (required)"
-                          className={`flex flex-col w-full h-4 p-6 self-stretch rounded shadow ${completed.from_name ? 'border-red-300 border' : ''}`}
-                        />
-                        {completed.from_name ? <p className='text-red-300'>Please enter a full name</p> : ''}
-                        
-                        <label htmlFor="from_number" className='block mb-2 mt-4'>Mobile Number<a className='text-red-300 '> *</a></label>
-                        <input
-                          type="text"
-                          id="from_number"
-                          name='from_number'
-                          placeholder="Enter your mobile number (required)"
-                          className={`flex flex-col w-full h-4 p-6 self-stretch rounded shadow ${completed.from_name ? 'border-red-300 border' : ''}`}
-                        />
-                        {completed.from_name ? <p className='text-red-300'>Please enter a full name</p> : ''}
+                  <p className="font-poppins-m text-3xl text-center mb-8">Contact Us</p>
+                  <p className="font-poppins text-center mb-8">Leave us a message and we will reply as soon as possible</p>
 
-                        <label htmlFor="from_email" className='block mb-2 mt-4'>Email<a className='text-red-300 '> *</a></label>
-                        <input
-                          type="text"
-                          id="from_email"
-                          name='from_email'
-                          placeholder="Enter your email address (required)"
-                          className={`flex flex-col w-full h-4 p-6 self-stretch rounded shadow ${completed.from_name ? 'border-red-300 border' : ''}`}
-                        />
-                        {completed.from_name ? <p className='text-red-300'>Please enter a full name</p> : ''}
+                  <form ref={form} onSubmit={sendTest} className="">
 
-                        <label htmlFor="message" className='block mb-2 mt-4'>Your message<a className='text-red-300 '> *</a></label>
-                        <textarea
-                          id="message"
-                          name='message'
-                          placeholder="Please type your message here "
-                          className={`w-full h-20 p-6 self-stretch rounded text-left text start m-0 shadow ${completed.from_name ? 'border-red-300 border' : ''}`}
-                        />
-                        {completed.from_name ? <p className='text-red-300'>Please enter a full name</p> : ''}
+                      <label htmlFor="from_name" className="block mb-2 mt-4">Full name<a className='text-red-300 '> *</a></label>
+                      <input
+                        type="text"
+                        id="from_name"
+                        name='from_name'
+                        onBlur={checkClicked}
+                        placeholder="Enter your full name (required)"
+                        className={`w-full h-4 p-6 rounded ${completed.from_name && 'border-red-300 border'}`}
+                      />
+                      {completed.from_name && <p className='text-red-300'>Please enter a full name</p>}
+                      
+                      <label htmlFor="from_number" className='block mb-2 mt-4'>Mobile Number<a className='text-red-300 '> *</a></label>
+                      <input
+                        type="text"
+                        id="from_number"
+                        name='from_number'
+                        placeholder="Enter your mobile number (required)"
+                        className={`w-full h-4 p-6 rounded ${completed.from_name && 'border-red-300 border'}`}
+                      />
+                      {completed.from_name && <p className='text-red-300'>Please enter a full name</p>}
 
-                        <input type="submit" className="text-center bg-accent py-4 px-8 rounded text-offblack w-full mt-4 shadow hover:shadow-lg hover:cursor-pointer"/>
-                    
-                    </form>
-                </div>
-            </div>
+                      <label htmlFor="from_email" className='block mb-2 mt-4'>Email<a className='text-red-300 '> *</a></label>
+                      <input
+                        type="text"
+                        id="from_email"
+                        name='from_email'
+                        placeholder="Enter your email address (required)"
+                        className={`w-full h-4 p-6 rounded ${completed.from_name && 'border-red-300 border'}`}
+                      />
+                      {completed.from_name && <p className='text-red-300'>Please enter a full name</p>}
 
+                      <label htmlFor="message" className='block mb-2 mt-4'>Your message<a className='text-red-300 '> *</a></label>
+                      <textarea
+                        id="message"
+                        name='message'
+                        placeholder="Please type your message here "
+                        className={`w-full h-20 p-6 self-stretch rounded text-left text start m-0 shadow ${completed.from_name && 'border-red-300 border'}`}
+                      />
+                      {completed.from_name && <p className='text-red-300'>Please enter a full name</p>}
+
+                      <input type="submit" className="text-center bg-accent py-4 px-8 rounded text-offblack w-full mt-4 shadow hover:shadow-lg hover:cursor-pointer"/>
+                  
+                  </form>
+              </div>
+          </div>
         </div>
     )
 }

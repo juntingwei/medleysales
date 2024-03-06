@@ -6,7 +6,7 @@ import { Fragment } from 'react'
 export default function Waitlist(props: any) {
   
     return (
-      <div>
+      <div className='z-40'>
         <Transition appear show={props.isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-10 text-offblack" onClose={props.closeModal}>
   

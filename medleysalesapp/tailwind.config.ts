@@ -35,9 +35,10 @@ const config: Config = {
         '1120px': '1120px'
       },
       backgroundImage: {
-        'blob': "url('/bigblob.svg')",
+        'blob': "url('/bigblob4.svg')",
         'blob1': "url('/bigblob1.svg')",
-        'blobs': "url('/blobs.svg')"
+        'blobs': "url('/blobs.svg')",
+        'cblob': "url('/contactblob2.svg')"
       }
 
     }

@@ -4,10 +4,10 @@ export default function Hero(props: any) {
 
     function MainContent() {
         return(
-            <div className="flex flex-col font-poppins max-w-[1120px] mx-auto text-4xl">
+            <div className="flex flex-col font-poppins max-w-[1120px] mx-auto ">
                 
                 <div className="inline-flex flex-col items-center gap-12 px-2">
-                    <p className="text-center font-poppins-m">Modern Booking Software made <a className="relative text-accent">
+                    <p className="text-center font-poppins-m text-4xl tablet:text-5xl tablet:mx-8 desktop:text-6xl">Modern Booking Software made <a className="relative text-accent">
                             for&nbsp;Pharmacy
                             <Image
                                 src='/underline.svg'
@@ -18,7 +18,7 @@ export default function Hero(props: any) {
                             />
                         </a>
                     </p>
-                    <h4 className="text-center font-poppins text-2xl">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
+                    <h4 className="text-center font-poppins text-2xl tablet:mx-8 desktop:text-3xl">Appointment scheduling software within form based screening, bulk data entry, and more.</h4>
                     <button onClick={props.openModal} className="text-center bg-accent py-4 px-8 rounded text-offblack font-poppins-m text-base">Join Waitlist</button>
                 </div>
 
