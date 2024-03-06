@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="">
             <div className="p-4 pb-16 relative bg-cblob bg-top bg-no-repeat bg-auto">
 
-              <div className="p-8 rounded-3xl bg-white text-offblack relative tablet:p-16 tablet:mx-8 desktop:max-w-[860px] desktop:m-auto">
+              <div className="p-8 rounded-3xl bg-white text-offblack relative tablet:p-16 tablet:max-w-[860px] tablet:mx-auto desktop:max-w-[860px] desktop:m-auto">
 
                   <p className="font-poppins-m text-3xl text-center mb-8">Contact Us</p>
                   <p className="font-poppins text-center mb-8">Leave us a message and we will reply as soon as possible</p>
